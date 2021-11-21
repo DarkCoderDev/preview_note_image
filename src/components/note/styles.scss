@@ -1,0 +1,10 @@
+$text: red;
+
+.Note {
+	position: absolute;
+	border-radius: 7px;
+	font-size: 1.5vmax;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: $text;
+}

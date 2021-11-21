@@ -1,0 +1,32 @@
+$text: red;
+$btnShadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+$btnShadowHover: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+
+.Button {
+	width: 150px;
+	height: 50px;
+	background: #333;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	box-shadow: $btnShadow;
+	font-size: 17px;
+	transition: all 0.3s;
+
+	&:hover {
+		box-shadow: $btnShadowHover;
+	}
+
+	&:active {
+		box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	&--primary {
+		transition: all 0.3s;
+		color: $text;
+
+		&:hover {
+			text-shadow: 0px 0px 10px $text;
+		}
+	}
+}
